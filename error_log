@@ -42,3 +42,4 @@
 [09-Dec-2019 00:16:41 UTC] PHP Fatal error:  Allowed memory size of 41943040 bytes exhausted (tried to allocate 20480 bytes) in /home/saalmairitiktkhk/public_html/wordpress/wp-content/plugins/elementor/includes/controls/base-multiple.php on line 66
 [09-Dec-2019 00:17:02 UTC] PHP Fatal error:  Allowed memory size of 41943040 bytes exhausted (tried to allocate 20480 bytes) in /home/saalmairitiktkhk/public_html/wordpress/wp-content/plugins/elementor/includes/base/controls-stack.php on line 1784
 [09-Dec-2019 00:17:09 UTC] PHP Fatal error:  Allowed memory size of 41943040 bytes exhausted (tried to allocate 20480 bytes) in /home/saalmairitiktkhk/public_html/wordpress/wp-content/plugins/elementor/includes/base/controls-stack.php on line 1784
+[09-Dec-2019 00:18:06 UTC] PHP Fatal error:  Allowed memory size of 41943040 bytes exhausted (tried to allocate 32768 bytes) in /home/saalmairitiktkhk/public_html/wordpress/wp-admin/includes/template.php on line 826
