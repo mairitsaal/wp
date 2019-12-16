@@ -197,12 +197,14 @@ function wpbc_get_email_help_shortcodes( $skip_shortcodes = array() , $email_exa
     $fields[] = sprintf(__('%s - inserting the dates of booking' ,'booking'),'<code>[dates]</code>');
     
     // [check_in_date]
-    if ( ! in_array( 'check_in_date', $skip_shortcodes ) )
-        $fields[] = sprintf(__('%s - inserting check-in date (first day of reservation),' ,'booking'),'<code>[check_in_date]</code>');
-    
+    if ( ! in_array( 'check_in_date', $skip_shortcodes ) ) {
+	    $fields[] = sprintf( __( '%s - inserting check-in date (first day of reservation),', 'booking' ), '<code>[check_in_date]</code>' );
+	    $fields[] = sprintf( __( '%s - inserting check-in date (only date without time) (first day of reservation),', 'booking' ), '<code>[check_in_only_date]</code>' );	//FixIn: 8.7.2.5
+    }
     // [check_out_date] [check_out_plus1day]
     if ( ! in_array( 'check_out_date', $skip_shortcodes ) ) {
         $fields[] = sprintf(__('%s - inserting check-out date (last day of reservation),' ,'booking'),'<code>[check_out_date]</code>');
+        $fields[] = sprintf(__('%s - inserting check-out date (only date without time) (last day of reservation),' ,'booking'),'<code>[check_out_only_date]</code>');		//FixIn: 8.7.2.5
         $fields[] = sprintf(__('%s - inserting check-out date (last day of reservation),' ,'booking'),'<code>[check_out_plus1day]</code>') .  ' + 1 ' . __('day', 'booking');
     }
     

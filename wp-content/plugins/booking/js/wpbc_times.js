@@ -913,10 +913,12 @@ function wpbc_is_time_field_in_booking_form( resource_id, form_elements ){						
 
 			var check_times_fields=[
 									[ time_slot_field_name, time_slot_field_name2 ],
-									[ start_time_slot_field_name, start_time_slot_field_name2 ],
-									[ end_time_slot_field_name, end_time_slot_field_name2 ]
+									[ start_time_slot_field_name, start_time_slot_field_name2 ]
 							];
-
+			// Check about disabling "end times" only in "single day" selection  mode		//FixIn: 8.7.2.1
+			if ( ( bk_days_selection_mode == 'single' ) ) {
+				check_times_fields.push( [ end_time_slot_field_name, end_time_slot_field_name2 ] );
+			}
 
 			for ( var ctf= 0; ctf < check_times_fields.length; ctf++ ){
 

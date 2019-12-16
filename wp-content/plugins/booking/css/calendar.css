@@ -475,6 +475,7 @@ div#datepick-div textarea {
     padding:0;
     width:100%;
     text-shadow:none;
+    position: relative;
 }
 /*******************************************************************************/
 /* Respondive Design For Mobile Devices ****************************************/

@@ -132,7 +132,11 @@
     float:left;
     margin-right:15px;
     margin-top:8px;
-    min-height: 29px;
+    min-height: 31px;
+}
+.wpdevelop .btn-toolbar > .btn,
+.wpdevelop .btn-toolbar > .btn-group {
+    min-height: 31px;
 }
 .wpdevelop .control-group .dropdown-toggle label.label_in_filters {
     font-weight: 600;
@@ -183,14 +187,14 @@
     vertical-align: bottom;
 }
 .wpdevelop .control-group .btn-toolbar .input-group > .input-group-btn .button {
-    line-height: 26px;
+    line-height: 28px;
     font-size: 13px;
     vertical-align: middle;
     padding: 0 10px -1px;
 }
 .wpdevelop .control-group .btn-toolbar .input-group > input[type='text'] {
     padding: 4px 4px 4px 8px;
-    height: 28px;
+    height: 30px;
 }
 .wpdevelop .control-group .btn-toolbar .input-group > select {
     height: 28px;
@@ -430,4 +434,9 @@
     .wpdevelop .wpbc-sm-100 {
         width:100% !important;
     }
+}
+
+
+.wp-core-ui .chzn-right-buttons a {
+    min-height: 31px;
 }

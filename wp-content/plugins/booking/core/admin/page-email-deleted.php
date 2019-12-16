@@ -993,6 +993,10 @@ function wpbc__get_replace_shortcodes__email_deleted( $booking_id, $bktype, $for
 
     $my_check_in_date  = wpbc_change_dates_format( $my_dates4emeil_check_in_out[0] );
     $my_check_out_date = wpbc_change_dates_format( $my_dates4emeil_check_in_out[ count( $my_dates4emeil_check_in_out ) - 1 ] );
+    //FixIn: 8.7.2.5
+    $my_check_in_onlydate	= wpbc_change_dates_format( date_i18n( 'Y-m-d 00:00:00', strtotime( $my_dates4emeil_check_in_out[0] ) ) );
+    $my_check_out_onlydate  = wpbc_change_dates_format( date_i18n( 'Y-m-d 00:00:00', strtotime( $my_dates4emeil_check_in_out[ count( $my_dates4emeil_check_in_out ) - 1 ] ) ) );
+
     $my_check_out_plus1day = wpbc_change_dates_format( date_i18n( 'Y-m-d H:i:s', strtotime( $my_dates4emeil_check_in_out[ count( $my_dates4emeil_check_in_out ) - 1 ] . " +1 day" ) ) ); //FixIn: 6.0.1.11
 
     // Cost ////////////////////////////////////////////////////////////////////
@@ -1005,6 +1009,10 @@ function wpbc__get_replace_shortcodes__email_deleted( $booking_id, $bktype, $for
     $replace[ 'dates' ]         = $my_dates_4_send;
     $replace[ 'check_in_date' ] = $my_check_in_date;
     $replace[ 'check_out_date' ]    = $my_check_out_date;
+    //FixIn: 8.7.2.5
+    $replace[ 'check_in_only_date' ] 	= $my_check_in_onlydate;
+    $replace[ 'check_out_only_date' ]   = $my_check_out_onlydate;
+
     $replace[ 'check_out_plus1day'] = $my_check_out_plus1day;                   //FixIn: 6.0.1.11
     $replace[ 'dates_count' ]   = count( $my_dates4emeil_check_in_out );
     $replace[ 'cost' ]          = $booking_cost;

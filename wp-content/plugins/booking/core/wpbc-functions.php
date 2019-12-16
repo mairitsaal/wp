@@ -268,6 +268,7 @@ function wpbc_get_booking_params( $booking_id, $formdata, $booking_resource_id =
 
     $my_check_in_date       = wpbc_change_dates_format( $sql_dates_format_check_in_out[0] );
     $my_check_out_date      = wpbc_change_dates_format( $sql_dates_format_check_in_out[ count( $sql_dates_format_check_in_out ) - 1 ] );
+
     $my_check_out_plus1day  = wpbc_change_dates_format( date_i18n( 'Y-m-d H:i:s', strtotime( $sql_dates_format_check_in_out[ count( $sql_dates_format_check_in_out ) - 1 ] . " +1 day" ) ) ); //FixIn: 6.0.1.11
 
 

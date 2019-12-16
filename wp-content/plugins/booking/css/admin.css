@@ -178,7 +178,7 @@ select option.wpbc_child_resource{
 	min-height: 30px;
     padding: 0 10px;
     */
-    line-height: 26px;
+    line-height: 28px;
     height: 28px;
     padding: 0 10px 1px;
 }
@@ -270,13 +270,16 @@ select option.wpbc_child_resource{
 }
 /**********************************************************************************************************************/
 .wp-core-ui .wpbc_page .control-group input[type="text"] {
-    min-height: 26px;
+    min-height: 29px;
 }
 .wp-core-ui .wpbc_page input[type="text"] {
     min-height: 28px;
 }
 .wp-admin .wpbc_page select {
     color:#32373c;
+}
+.wpdevelop input, .wpdevelop button, .wpdevelop select, .wpdevelop textarea {
+    line-height: 2;
 }
 @media (max-width: 782px) {
 

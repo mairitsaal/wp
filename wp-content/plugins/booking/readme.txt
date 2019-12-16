@@ -5,7 +5,7 @@ Tags: booking calendar, booking system, availability calendar, events calendar, 
 Requires at least: 4.0
 Requires PHP: 5.2.4
 Tested up to: 5.3
-Stable tag: 8.7.1
+Stable tag: 8.7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -227,6 +227,16 @@ Please see [Video Guides](https://wpbookingcalendar.com/help/).
 13. **Time Slots**. Simple configuration of **time slots** selection in booking form.
 
 == Changelog ==
+= 8.7.2 =
+- Changes in **all** versions:
+	* **New**. Shortcode for emails: [check_in_only_date] and [check_out_only_date] -  inserting check in/out **date without time** in emails at the Booking > Settings > Emails page. (8.7.2.5)
+	* **Improvement**. Update CSS of interface elements relative to  WordPress 5.3.1 update.
+- Changes in **Personal / Business Small / Business Medium / Business Large / MultiUser** versions:
+	* **New**. shortcodes [days_count] and [nights_count] that  possible to use in the Additional cost settings with arithmetic operations. For example like this: ( [days_count] * 5 ) (8.7.2.4) *(Business Medium/Large, MultiUser)*
+	* **New**. Ability to apply  coupon codes directly to days cost (without additional costs) or apply coupon code discounts to final booking cost with additional costs. You can activate it  at the Booking > Settings > Payment page in Payment Options section. (8.7.2.2) *(Business Large, MultiUser)*
+	* **Fix**. Check about disabling "end times" only in "single day" selection  mode (8.7.2.1) *(Business Small/Medium/Large, MultiUser)*
+	* **Fix**. Issue if incorrectly  showing cost  for 1 day,  if was booked entire day,  if cost  was set per 1 hour or activated option "Time impact to cost". Previosly  system  was showing cost per 2 days instead of 1 day  cost (8.7.2.3) *(Business Small/Medium/Large, MultiUser)*
+
 = 8.7.1 =
 - Changes in **all** versions:
 	* **Improvement**. Changed title 'Trash' to 'Trash / Reject',  as some users can confuse missed Reject status.
@@ -264,7 +274,7 @@ Please see [Video Guides](https://wpbookingcalendar.com/help/).
 	* **Improvement**. Add ability to  use only labels in shortcode for showing one payment method (its works only  with  these exact options): [select payment-method "All payment methods@@" "Stripe" "PayPal" "Authorize.Net" "Sage Pay" "Bank Transfer" "Pay in Cash" "iPay88" "iDEAL"] (8.6.1.16) *(Business Small/Medium/Large, MultiUser)*
 	* **Improvement**. Ability to  activate updating booking cost after editing booking in admin panel, based on new booking data. You can activate this option  at the Booking > Settings > Payment page  (8.6.1.24) *(Business Small/Medium/Large, MultiUser)*
 	* **Deprecated**. Removing deprecated Stripe v.1 integration. Now available only  Stripe v.3 integration  that  support SCA (8.6.1.12) *(Business Small/Medium/Large, MultiUser)*
-	* **Fix**. Show payment description about the booking in Stripe dashboard in Metadata section for Stripe v.3 integration (8.6.1.20) *(Business Small/Medium/Large, MultiUser)*
+	* **Fix**. Show payment description about the booking in Stripe dashboard in Metadata section for Stripe v.3 integration (8.6.1.20)
 	* **Fix**. Issue of showing negative balance hint, during using deposit feature with zero cost (8.6.1.5) *(Business Medium/Large, MultiUser)*
 	* **Fix**. Issue of incorrectly  showing available results in "Advanced search results" (while using the shortcode like this [additional_search "3"] at  the Booking > Settings > Search page),  and if dates in some resources was marked as unavailable via season filters. (8.6.1.14) *(Business Large, MultiUser)*
 	* **Fix**. Issue of incorrectly  showing available results,  when  searching only  for 1 specific day (check in/out dates the same in availability form), and we have booked (as full day), this day  in specific booking resource. (8.6.1.19) *(Business Large, MultiUser)*
@@ -677,5 +687,5 @@ Please see [Video Guides](https://wpbookingcalendar.com/help/).
 For more information, see the [full release notes](https://wpbookingcalendar.com/changelog/).
 
 == Upgrade Notice ==
-= 8.7 =
+= 8.7.1 =
 Latest WordPress version support. New calendar skin. In paid versions, ability to define dates format for searching; logging feature, ...
