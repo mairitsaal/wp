@@ -264,6 +264,7 @@ myjQuery(function(){
 		};
 		var createCalendar = function()
 		{
+		    try {$.fn.datepicker.noConflict();} catch (e) {}
 		    var dStringClass = new Array();
             timeOut = true;
             if ($("#dp"+opt.id)) $("#dp"+opt.id).datepicker("destroy");

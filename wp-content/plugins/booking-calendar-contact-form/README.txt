@@ -935,7 +935,10 @@ Setup area for the built-in antispam captcha verification. Settings fields:
 = 1.1.96 =
 * Fixed bug in email delivery
 
+= 1.1.97 =
+* Fixed conflict with bootstrap date-picker
+
 == Upgrade Notice ==
 
-= 1.1.96 =
-* Fixed bug in email delivery
+= 1.1.97 =
+* Fixed conflict with bootstrap date-picker

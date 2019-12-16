@@ -3,7 +3,7 @@
 Plugin Name: Booking Calendar Contact Form
 Plugin URI: https://bccf.dwbooster.com
 Description:  Booking forms for a start and end date or a single date: hotel booking, car rental, room booking, etc. Connected to a PayPal payment button.
-Version: 1.1.96
+Version: 1.1.97
 Author: CodePeople
 Author URI: https://bccf.dwbooster.com/download
 License: GPL
