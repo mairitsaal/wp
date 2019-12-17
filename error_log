@@ -53,3 +53,4 @@
 [17-Dec-2019 20:43:50 UTC] PHP Parse error:  syntax error, unexpected ')', expecting variable (T_VARIABLE) in /home/saalmairitiktkhk/public_html/wordpress/wp-content/plugins/my_first_plugin/plugin.php on line 12
 [17-Dec-2019 20:53:03 UTC] PHP Parse error:  syntax error, unexpected ')', expecting variable (T_VARIABLE) in /home/saalmairitiktkhk/public_html/wordpress/wp-content/plugins/my_first_plugin/plugin.php on line 12
 [17-Dec-2019 20:53:03 UTC] PHP Parse error:  syntax error, unexpected ')', expecting variable (T_VARIABLE) in /home/saalmairitiktkhk/public_html/wordpress/wp-content/plugins/my_first_plugin/plugin.php on line 12
+[17-Dec-2019 21:51:46 UTC] PHP Fatal error:  Cannot redeclare sp_read_more_link() (previously declared in /home/saalmairitiktkhk/public_html/wordpress/wp-content/plugins/very-first-plugin  -2/very-first-plugin.php:15) in /home/saalmairitiktkhk/public_html/wordpress/wp-content/plugins/very-first-plugin  /very-first-plugin.php on line 16
