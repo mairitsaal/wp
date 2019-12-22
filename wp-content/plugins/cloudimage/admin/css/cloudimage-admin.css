@@ -1,0 +1,319 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.big_p {
+    font-size: 110%;
+}
+
+.top_part {
+    text-align: center;
+}
+
+.sub_title {
+    font-weight: initial;
+    font-size: 12px;
+}
+
+input {
+    height: 30px;
+}
+
+p.submit {
+    text-align: center;
+}
+
+.cloudimg-lower {
+    margin: 0 auto;
+    text-align: left;
+    max-width: 70%;
+    padding: 1.5rem;
+}
+
+.cloudimg-box {
+    box-sizing: border-box;
+    background: #182f86b5;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.cloudimg-box h1, .cloudimg-box h2, .cloudimg-box h3, .cloudimg-box h4 {
+    text-align: center;
+    padding: 1.5rem 1.5rem 0rem 1.5rem;
+    margin: 0;
+    color: #fff;
+    line-height: 1;
+}
+.cloudimg-box h1 {
+    padding-bottom: 20px!important;
+}
+
+.cloudimg-box h2 {
+    font-weight: 400;
+}
+
+.cloudimg-box h4 {
+    padding: 1.5rem;
+}
+
+.cloudimg-box:last-of-type a {
+    color: #fff;
+}
+
+.cloudimg-box p {
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+    margin: 0;
+}
+
+.cloudimg-box table, .cloudimg-box tbody, .cloudimg-box tr, .cloudimg-box th, .cloudimg-box td {
+    vertical-align: middle;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    margin: 0;
+}
+
+.some_margin {
+    margin-bottom: 0.25rem;
+}
+
+.cloudimg-box p:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.cloudimg-box .cloudimg-right {
+    padding-right: 1.5rem;
+}
+
+.cloudimg-box .form-table th {
+    color: #fff;
+    font-weight: 400;
+    width: 260px;
+}
+
+.cloudimg-box .form-table input,
+.cloudimg-box .form-table select {
+    border-radius: 2px;
+}
+
+.cloudimg-box .form-table select {
+    overflow: auto;
+    min-width: 100px;
+    max-height: 65px;
+}
+
+.cloudimg-box .content-container .form-table:last-of-type th {
+    width: 260px;
+}
+
+.cloudimg-box .content-container .form-table:last-of-type input {
+    margin-bottom: 5px;
+}
+
+.cloudimg-box .form-table label {
+    min-width: 70px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.cloudimg-box .warning-wrapper p {
+    padding: 1rem;
+    margin: 0;
+}
+
+.cloudimg-box .a_logo {
+    max-width: 300px;
+    display: inline-block;
+}
+
+.cloudimg-box .a_logo img {
+    max-width: 100%;
+}
+
+.cloudimg-boxes .cloudimg-box {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.cloudimg-boxes .cloudimg-box:last-child {
+    margin-bottom: 1.5rem;
+}
+
+.cloudimg-boxes .cloudimg-box:nth-of-type(1) {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cloudimg-boxes .cloudimg-box:nth-of-type(1) h2 {
+    padding-top: 0;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    background: #6589f7;
+    color: white;
+    border-radius: 50%;
+    padding: 2px;
+    width: 1rem;
+    height: 1rem;
+    text-align: center;
+    line-height: 1;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 400px;
+    line-height: 1.3em;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+img.attachment-60x60 {
+    width: 60px;
+    height: 60px;
+}
+
+.content-container {
+    position: relative;
+    padding: 2rem 4.5rem;
+}
+
+.content-container fieldset {
+    margin-bottom: .5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .content-container {
+        padding: 1rem 2rem;
+    }
+}
+
+.warning-wrapper {
+    background: #6589f7;
+    margin: 1rem 1.5rem;
+}
+
+form input.button.button-primary.button-large {
+    padding: 1rem 1.5rem;
+    height: auto;
+    line-height: 1;
+    border: none;
+    background: #6589f7;
+    box-shadow: none;
+}
+
+.cloud-image {
+    display: block;
+    width: 100px;
+    position: absolute;
+    right: 7rem;
+    top: 0rem;
+}
+
+.cloud-image img {
+    max-width: 100%;
+}
+
+.small-cloud-image {
+    display: block;
+    width: 100px;
+    position: absolute;
+    left: 4rem;
+    top: 2.4rem;
+}
+
+@media screen and (max-width: 768px) {
+    .robot-image {
+        display: none;
+    }
+}
+
+.robot-image img {
+    max-width: 100%;
+}
+
+.cloudimage-link, .cloudimage-link:hover, .cloudimage-link:active {
+    color: #ffffff;
+}
+
+.cloudimage-demo {
+
+}
+
+.cloudimage-demo a, .cloudimage-demo a:hover {
+    color: #ffffff;
+}
+
+.cloudimage-domain {
+    margin-bottom: 20px !important;
+}
+
+@media screen and (max-width: 1230px) {
+    .cloud-image {
+        display: none;
+    }
+
+    .cloudimg-box .content-container .form-table:last-of-type th {
+        width: 240px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .content-container {
+        padding: 1rem 2rem;
+    }
+    .small-cloud-image {
+        display: none;
+    }
+    .cloudimage-demo {
+        display: none;
+    }
+    .cloudimg-box th {
+        width: 170px;
+    }
+    .cloudimg-box .content-container .form-table:last-of-type th {
+        width: 200px;
+    }
+}
+
+
+
+
